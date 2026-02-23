@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite  name="GroupTest" verbose="1">
+    <groups>
+        <run>
+            <include name="dataProviderTest"/>
+        </run>
+    </groups>
+    <test name="Test" thread-count="5">
+        <classes>
+            <class name="com.automation.tests.JSONDataProviderTest"/>
+        </classes>
+    </test>
+</suite>
