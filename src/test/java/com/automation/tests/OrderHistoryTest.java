@@ -15,7 +15,6 @@ public class OrderHistoryTest extends BaseTest {
 
     @Test(dataProvider = "getData",groups = {"dataProviderTest"})
     public void placeOrder(String user,String pass, String prod) {
-
         HomePage homePage = loginPage.loginToWebsite(user, pass);
         Assert.assertTrue(homePage.VerifyHomePage());
 

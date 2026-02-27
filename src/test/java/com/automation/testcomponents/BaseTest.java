@@ -25,7 +25,7 @@ import java.util.Properties;
 public class BaseTest {
 
 
-    static WebDriver driver;
+    static WebDriver driver;  //don't use static to webdriver because of parllel execution problem, my code is not attaching the screenshots that's why I make it static
     Properties properties;
 
     public LoginPage loginPage;
